@@ -1,0 +1,27 @@
+#effectContainer {
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: var(--color-primary);
+  opacity: 0.8;
+  border-radius: 20% 20% 50% 50% / 20% 20% 50% 50%;
+  z-index: 100;
+}
+
+.particle {
+  position: absolute;
+  width: var(--particle-size, 5px);
+  height: var(--particle-size, 5px);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}

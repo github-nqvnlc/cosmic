@@ -1,0 +1,3547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic - Landing Page Template</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/common.css" />
+    <link rel="stylesheet" href="/style/typography.css" />
+    <link rel="stylesheet" href="/style/reponsive/sm.css" />
+    <link rel="stylesheet" href="/style/reponsive/md.css" />
+    <link rel="stylesheet" href="/style/reponsive/lg.css" />
+    <link rel="stylesheet" href="/style/reponsive/xl.css" />
+    <link rel="stylesheet" href="/style/colors/color.css" />
+    <link rel="stylesheet" href="/style/rain-drop.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="sticky top-2 lg-top-5 z-40">
+      <div class="container">
+        <div
+          class="bg-blur border rounded-2xl df jc-between ai-center p-2 border-primary backdrop-blur"
+        >
+          <!-- Logo  -->
+          <a href="/" class="df ai-center text-bold link">
+            <span
+              class="df ai-center jc-center rounded-lg mr-2 size-7 lg-size-8 border border-primary logo"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sun-dim size-5 lg-size-6 text-white"
+              >
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 4h.01"></path>
+                <path d="M20 12h.01"></path>
+                <path d="M12 20h.01"></path>
+                <path d="M4 12h.01"></path>
+                <path d="M17.657 6.343h.01"></path>
+                <path d="M17.657 17.657h.01"></path>
+                <path d="M6.343 17.657h.01"></path>
+                <path d="M6.343 6.343h.01"></path>
+              </svg>
+            </span>
+            <h5 class="text-lg lg-text-xl text-secondary">Cosmic</h5>
+          </a>
+          <!-- Menu Mobile -->
+          <div id="openDialog" class="df ai-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu cursor-pointer lg-hidden text-foreground"
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="radix-:R9kq:"
+              data-state="closed"
+            >
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </div>
+          <!-- Nav menu -->
+          <nav
+            class="relative z-10 max-w-max f1 ai-center jc-center hidden mx-auto lg-block"
+          >
+            <div class="relative">
+              <ul class="df f1 list ai-center jc-center">
+                <li>
+                  <a
+                    id="dropdownMenu"
+                    class="link text-secondary inline-flex h-10 w-max ai-center jc-center rounded-md px-4 py-2 text-sm text-medium bg-transparent cursor-pointer button-menu"
+                  >
+                    Products
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down relative ml-1 h-3 w-3 transition duration-200 icon-arrow"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#solutions"
+                    class="link text-secondary cursor-pointer inline-flex h-10 w-max ai-center jc-center rounded-md bg-transparent px-4 py-2 text-sm text-medium"
+                    >Solutions</a
+                  >
+                  <a
+                    href="#pricing"
+                    class="link text-secondary cursor-pointer inline-flex h-10 w-max ai-center jc-center rounded-md bg-transparent px-4 py-2 text-sm text-medium"
+                    >Pricing</a
+                  >
+                  <a
+                    href="#team"
+                    class="link text-secondary cursor-pointer inline-flex h-10 w-max ai-center jc-center rounded-md bg-transparent px-4 py-2 text-sm text-medium"
+                    >Team</a
+                  >
+                  <a
+                    href="#contact"
+                    class="link text-secondary cursor-pointer inline-flex h-10 w-max ai-center jc-center rounded-md bg-transparent px-4 py-2 text-sm text-medium"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- ====================== -->
+            <!-- Dropdown Menu -->
+            <div
+              class="dropdown-hover absolute left-0 top-full hidden jc-center"
+            >
+              <div
+                style="--viewport-width: 300px; --viewport-height: 286px"
+                class="relative mt-1.5 w-full overflow-hidden rounded-md border border-primary bg-popover shadow-lg dropdown-menu"
+              >
+                <div class="left-0 top-0 w-full md-absolute md-w-auto">
+                  <div style="width: 300px" class="gap-5 p-2">
+                    <ul class="df f-column list">
+                      <li>
+                        <a
+                          class="link df cursor-pointer gap-6 ai-start rounded-md p-4 text-sm item-dropdown-menu"
+                        >
+                          <div
+                            class="df ai-center jc-center size-8 bg-primary/20 p-2 rounded-full ring-8-primary/10 mb-4"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="var(--color-primary)"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-frame text-secondary size-5"
+                            >
+                              <line x1="22" x2="2" y1="6" y2="6"></line>
+                              <line x1="22" x2="2" y1="18" y2="18"></line>
+                              <line x1="6" x2="6" y1="2" y2="22"></line>
+                              <line x1="18" x2="18" y1="2" y2="22"></line>
+                            </svg>
+                          </div>
+                          <div>
+                            <p
+                              class="mb-1 text-semibold leading-none text-foreground"
+                            >
+                              LaunchPad
+                            </p>
+                            <p class="line-clamp-2 text-muted-foreground">
+                              Launch high-impact pages effortlessly.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="link df cursor-pointer gap-6 ai-start rounded-md p-4 text-sm item-dropdown-menu"
+                        >
+                          <div
+                            class="df ai-center jc-center size-8 bg-primary/20 p-2 rounded-full ring-8-primary/10 mb-4"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="var(--color-primary)"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-chart-scatter text-secondary size-5"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r=".5"
+                                fill="currentColor"
+                              ></circle>
+                              <circle
+                                cx="18.5"
+                                cy="5.5"
+                                r=".5"
+                                fill="currentColor"
+                              ></circle>
+                              <circle
+                                cx="11.5"
+                                cy="11.5"
+                                r=".5"
+                                fill="currentColor"
+                              ></circle>
+                              <circle
+                                cx="7.5"
+                                cy="16.5"
+                                r=".5"
+                                fill="currentColor"
+                              ></circle>
+                              <circle
+                                cx="17.5"
+                                cy="14.5"
+                                r=".5"
+                                fill="currentColor"
+                              ></circle>
+                              <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <p
+                              class="mb-1 text-semibold leading-none text-foreground"
+                            >
+                              Orbit Analytics
+                            </p>
+                            <p class="line-clamp-2 text-muted-foreground">
+                              Powerful insights for smarter decisions.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="link df cursor-pointer gap-6 ai-start rounded-md p-4 text-sm item-dropdown-menu"
+                        >
+                          <div
+                            class="df ai-center jc-center size-8 bg-primary/20 p-2 rounded-full ring-8-primary/10 mb-4"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="var(--color-primary)"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-blocks text-secondary size-5"
+                            >
+                              <rect
+                                width="7"
+                                height="7"
+                                x="14"
+                                y="3"
+                                rx="1"
+                              ></rect>
+                              <path
+                                d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <p
+                              class="mb-1 text-semibold leading-none text-foreground"
+                            >
+                              Nova Integrator
+                            </p>
+                            <p class="line-clamp-2 text-muted-foreground">
+                              Seamless connections with your favorite tools.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====================== -->
+          </nav>
+          <div class="hidden lg-flex">
+            <button
+              id="toggleDarkMode"
+              class="inline-flex ai-center gap-2 whitespace-nowrap text-sm font-medium h-9 rounded-md px-3 w-full jc-start cursor-pointer bg-transparent button-darkmode"
+            >
+              <div id="iconDarkMode" class="df ai-center gap-2"></div>
+              <div class="hidden ai-center gap-2"></div>
+            </button>
+            <a
+              aria-label="Get Template"
+              target="_blank"
+              class="link inline-flex ai-center jc-center gap-2 whitespace-nowrap text-sm text-semibold cursor-pointer button-bezel transition-colors bg-primary text-button h-9 rounded-md px-3 ms-2 button-hover"
+              href="/"
+              >Get Template</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =========== -->
+
+    <!-- Hero banner -->
+    <section class="container w-full">
+      <div
+        class="grid ai-center jc-center lg-max-w-screen-xl mx-auto py-16 md:py-32"
+      >
+        <div class="relative df ai-center jc-center w-full overflow-hidden">
+          <!-- rain drop -->
+          <div id="effectContainer" class="absolute"></div>
+          <!-- =========== -->
+
+          <div class="relative text-center space-y-8 pb-20">
+            <div
+              class="inline-flex ai-center rounded-full border border-primary px-2.5 text-semibold transition-colors text-foreground text-sm bg-muted py-2"
+            >
+              <span class="mr-2 text-secondary"
+                ><div
+                  class="inline-flex ai-center rounded-full border px-2.5 py-0.5 text-xs text-semibold transition-colors border-transparent bg-background text-foreground"
+                >
+                  New
+                </div></span
+              ><span> Design is out now! </span>
+            </div>
+            <div
+              class="max-w-screen-md mx-auto text-center text-4xl md:text-6xl text-bold text-foreground"
+            >
+              <h1 class="font-bricolage block">
+                Smart Solutions to Grow Your Business
+              </h1>
+            </div>
+            <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+              Meet our AI-powered SaaS solution to lighten your workload,
+              increase efficiency and make more accurate decisions.
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4">
+              <button
+                class="button-get-started cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors bg-primary text-white button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right size-5 ml-2 text-bold"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+              <button
+                class="button-get-started cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors button-light text-foreground button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            style="
+              width: 40%;
+              transform: translate(-50%, 0);
+              filter: blur(100px);
+            "
+            class="absolute top-2 lg:-top-8 left-1/2 mx-auto h-24 lg:h-80 bg-primary/60 rounded-full z-10"
+          ></div>
+          <img
+            id="heroImage"
+            alt="hero-image-light"
+            class="w-full z-20 relative mx-auto df ai-center jc-center rounded-lg leading-none hero-image"
+          />
+          <div
+            style="width: 50%; transform: translate(-50%, 0)"
+            class="absolute mx-auto left-1/2 bottom-0 left-0 w-full h-20 md:h-32 bg-gradient-to-b z-30 rounded-lg"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Line Animation -->
+    <section class="pb-12 lg:pb-20">
+      <div class="container">
+        <div
+          style="
+            gap: 3rem;
+            mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              rgba(0, 0, 0, 1) 10%,
+              rgba(0, 0, 0, 1) 90%,
+              transparent 100%
+            );
+            -webkit-mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              rgba(0, 0, 0, 1) 10%,
+              rgba(0, 0, 0, 1) 90%,
+              transparent 100%
+            );
+          "
+          class="df overflow-hidden f-row hover-pause-animation"
+        >
+          <div
+            class="df jc-around shrink-0 animate-marquee-left f-row gap-[3rem] lg:gap-[5rem]"
+          >
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-crown mr-3 text-foreground"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"
+                ></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              Amazon
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-vegan mr-3 text-foreground"
+              >
+                <path
+                  d="M2 2a26.6 26.6 0 0 1 10 20c.9-6.82 1.5-9.5 4-14"
+                ></path>
+                <path d="M16 8c4 0 6-2 6-6-4 0-6 2-6 6"></path>
+                <path d="M17.41 3.6a10 10 0 1 0 3 3"></path>
+              </svg>
+              Linkedin
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-ghost mr-3 text-foreground"
+              >
+                <path d="M9 10h.01"></path>
+                <path d="M15 10h.01"></path>
+                <path
+                  d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"
+                ></path>
+              </svg>
+              Google
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-puzzle mr-3 text-foreground"
+              >
+                <path
+                  d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"
+                ></path>
+              </svg>
+              Apple
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-squirrel mr-3 text-foreground"
+              >
+                <path d="M15.236 22a3 3 0 0 0-2.2-5"></path>
+                <path
+                  d="M16 20a3 3 0 0 1 3-3h1a2 2 0 0 0 2-2v-2a4 4 0 0 0-4-4V4"
+                ></path>
+                <path d="M18 13h.01"></path>
+                <path
+                  d="M18 6a4 4 0 0 0-4 4 7 7 0 0 0-7 7c0-5 4-5 4-10.5a4.5 4.5 0 1 0-9 0 2.5 2.5 0 0 0 5 0C7 10 3 11 3 17c0 2.8 2.2 5 5 5h10"
+                ></path>
+              </svg>
+              Android
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-cookie mr-3 text-foreground"
+              >
+                <path
+                  d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
+                ></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+              Acmee
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-drama mr-3 text-foreground"
+              >
+                <path d="M10 11h.01"></path>
+                <path d="M14 6h.01"></path>
+                <path d="M18 6h.01"></path>
+                <path d="M6.5 13.1h.01"></path>
+                <path
+                  d="M22 5c0 9-4 12-6 12s-6-3-6-12c0-2 2-3 6-3s6 1 6 3"
+                ></path>
+                <path d="M17.4 9.9c-.8.8-2 .8-2.8 0"></path>
+                <path
+                  d="M10.1 7.1C9 7.2 7.7 7.7 6 8.6c-3.5 2-4.7 3.9-3.7 5.6 4.5 7.8 9.5 8.4 11.2 7.4.9-.5 1.9-2.1 1.9-4.7"
+                ></path>
+                <path d="M9.1 16.5c.3-1.1 1.4-1.7 2.4-1.4"></path>
+              </svg>
+              Shadcn
+            </p>
+          </div>
+          <div
+            class="df jc-around shrink-0 animate-marquee-left f-row gap-[3rem] lg:gap-[5rem]"
+          >
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-crown mr-3 text-foreground"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"
+                ></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              Amazon
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-vegan mr-3 text-foreground"
+              >
+                <path
+                  d="M2 2a26.6 26.6 0 0 1 10 20c.9-6.82 1.5-9.5 4-14"
+                ></path>
+                <path d="M16 8c4 0 6-2 6-6-4 0-6 2-6 6"></path>
+                <path d="M17.41 3.6a10 10 0 1 0 3 3"></path>
+              </svg>
+              Linkedin
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-ghost mr-3 text-foreground"
+              >
+                <path d="M9 10h.01"></path>
+                <path d="M15 10h.01"></path>
+                <path
+                  d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"
+                ></path>
+              </svg>
+              Google
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-puzzle mr-3 text-foreground"
+              >
+                <path
+                  d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"
+                ></path>
+              </svg>
+              Apple
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-squirrel mr-3 text-foreground"
+              >
+                <path d="M15.236 22a3 3 0 0 0-2.2-5"></path>
+                <path
+                  d="M16 20a3 3 0 0 1 3-3h1a2 2 0 0 0 2-2v-2a4 4 0 0 0-4-4V4"
+                ></path>
+                <path d="M18 13h.01"></path>
+                <path
+                  d="M18 6a4 4 0 0 0-4 4 7 7 0 0 0-7 7c0-5 4-5 4-10.5a4.5 4.5 0 1 0-9 0 2.5 2.5 0 0 0 5 0C7 10 3 11 3 17c0 2.8 2.2 5 5 5h10"
+                ></path>
+              </svg>
+              Android
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-cookie mr-3 text-foreground"
+              >
+                <path
+                  d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
+                ></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+              Acmee
+            </p>
+            <p
+              class="df ai-center text-xl md:text-2xl text-medium text-foreground"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-drama mr-3 text-foreground"
+              >
+                <path d="M10 11h.01"></path>
+                <path d="M14 6h.01"></path>
+                <path d="M18 6h.01"></path>
+                <path d="M6.5 13.1h.01"></path>
+                <path
+                  d="M22 5c0 9-4 12-6 12s-6-3-6-12c0-2 2-3 6-3s6 1 6 3"
+                ></path>
+                <path d="M17.4 9.9c-.8.8-2 .8-2.8 0"></path>
+                <path
+                  d="M10.1 7.1C9 7.2 7.7 7.7 6 8.6c-3.5 2-4.7 3.9-3.7 5.6 4.5 7.8 9.5 8.4 11.2 7.4.9-.5 1.9-2.1 1.9-4.7"
+                ></path>
+                <path d="M9.1 16.5c.3-1.1 1.4-1.7 2.4-1.4"></path>
+              </svg>
+              Shadcn
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Benefits -->
+    <section id="benefit" class="pb-20 sm:pb-32">
+      <div class="container">
+        <div class="dg lg:grid-cols-2 lg:gap-24">
+          <div>
+            <header
+              class="mb-6 lg:mb-12 mx-auto sticky lg:top-custom text-center lg:text-start max-w-full"
+            >
+              <div
+                style="letter-spacing: 0.05em"
+                class="text-lg text-primary mb-2"
+              >
+                Benefits
+              </div>
+              <h2
+                class="text-3xl md:text-4xl text-bold text-foreground mb-4 font-bricolage"
+              >
+                What Do We Bring to You?
+              </h2>
+              <p class="text-xl text-muted-foreground mb-8">
+                All the innovative solutions you need to grow your business are
+                here! We add value to your business with our features that
+                simplify your workflow, increase efficiency and strengthen your
+                decisions.
+              </p>
+            </header>
+          </div>
+          <div class="df f-column gap-6 lg:gap-[14rem] w-full">
+            <div
+              class="rounded-lg text-foreground lg:sticky shadow-none border border-primary bg-muted"
+              style="top: 22rem"
+            >
+              <div class="df f-column space-y-1.5 p-6">
+                <div class="df jc-between">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="mb-6 text-primary bg-primary/20 p-2 rounded-full ring-8 ring-primary/10"
+                  >
+                    <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                    <path
+                      d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-5xl text-muted-foreground-15 text-medium transition-all delay-75"
+                    >0<!-- -->1</span
+                  >
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl text-semibold font-bricolage leading-none tracking-tight"
+                  >
+                    AI-Powered Automation
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6 pt-0 text-muted-foreground">
+                Save time and increase your efficiency by automating your
+                routine business processes.
+              </div>
+            </div>
+            <div
+              class="rounded-lg text-foreground lg:sticky shadow-none border border-primary bg-muted"
+              style="top: 23rem"
+            >
+              <div class="df f-column space-y-1.5 p-6">
+                <div class="df jc-between">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chart-line mb-6 text-primary bg-primary/20 p-2 rounded-full ring-8 ring-primary/10"
+                  >
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                    <path d="m19 9-5 5-4-4-3 3"></path>
+                  </svg>
+                  <span
+                    class="text-5xl text-muted-foreground-15 text-medium transition-all delay-75"
+                    >0<!-- -->2</span
+                  >
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl text-semibold font-bricolage leading-none tracking-tight"
+                  >
+                    Real Time Data Analytics
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6 pt-0 text-muted-foreground">
+                We help you make more informed and strategic decisions by
+                instantly analyzing your data.
+              </div>
+            </div>
+            <div
+              class="rounded-lg text-foreground lg:sticky shadow-none border border-primary bg-muted"
+              style="top: 24rem"
+            >
+              <div class="df f-column space-y-1.5 p-6">
+                <div class="df jc-between">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wallet mb-6 text-primary bg-primary/20 p-2 rounded-full ring-8 ring-primary/10"
+                  >
+                    <path
+                      d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+                    ></path>
+                    <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+                  </svg>
+                  <span
+                    class="text-5xl text-muted-foreground-15 text-medium transition-all delay-75"
+                    >0<!-- -->3</span
+                  >
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl text-semibold font-bricolage leading-none tracking-tight"
+                  >
+                    Personalized Experience
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6 pt-0 text-muted-foreground">
+                It offers flexible solutions with its adaptable structure
+                according to the specific needs of your business.
+              </div>
+            </div>
+            <div
+              class="rounded-lg text-foreground lg:sticky shadow-none border border-primary bg-muted"
+              style="top: 24rem"
+            >
+              <div class="df f-column space-y-1.5 p-6">
+                <div class="df jc-between">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sparkle mb-6 text-primary bg-primary/20 p-2 rounded-full ring-8 ring-primary/10"
+                  >
+                    <path
+                      d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-5xl text-muted-foreground-15 text-medium transition-all delay-75"
+                    >0<!-- -->4
+                  </span>
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl text-semibold font-bricolage leading-none tracking-tight"
+                  >
+                    Scalable Structure
+                  </h3>
+                </div>
+              </div>
+              <div class="p-6 pt-0 text-muted-foreground">
+                Move forward into the future with confidence, with an
+                infrastructure that can expand as your business grows.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Features -->
+    <section id="features" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Features</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            What Makes Us Different
+          </h2>
+          <p class="text-xl text-muted-foreground mb-8">
+            Unleash the power of our innovative features designed to streamline
+            your workflow, enhance decision-making, and drive business growth.
+          </p>
+        </header>
+        <div class="dg grid-col gap-4">
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-tablet-smartphone text-primary"
+                  >
+                    <rect width="10" height="14" x="3" y="8" rx="2"></rect>
+                    <path
+                      d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"
+                    ></path>
+                    <path d="M8 18h.01"></path>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  AI-Powered Task Management
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Utilize machine learning algorithms to prioritize tasks,
+                ensuring your team focuses on what matters most.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-badge-check text-primary"
+                  >
+                    <path
+                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+                    ></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  Predictive Analytics
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Leverage historical data to forecast trends and make proactive
+                decisions, minimizing risks and maximizing opportunities.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-goal text-primary"
+                  >
+                    <path d="M12 13V2l8 4-8 4"></path>
+                    <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"></path>
+                    <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"></path>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  Custom Workflow Automation
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Design automated workflows tailored to your processes,
+                integrating multiple tools to streamline operations seamlessly.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-picture-in-picture text-primary"
+                  >
+                    <path
+                      d="M8 4.5v5H3m-1-6 6 6m13 0v-3c0-1.16-.84-2-2-2h-7m-9 9v2c0 1.05.95 2 2 2h3"
+                    ></path>
+                    <rect width="10" height="7" x="12" y="13.5" ry="2"></rect>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  Robust API Integrations
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Easily connect our platform with your existing software
+                solutions, enabling data synchronization and enhancing
+                functionality.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mouse-pointer-click text-primary"
+                  >
+                    <path d="M14 4.1 12 6"></path>
+                    <path d="m5.1 8-2.9-.8"></path>
+                    <path d="m6 12-1.9 2"></path>
+                    <path d="M7.2 2.2 8 5.1"></path>
+                    <path
+                      d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  Interactive Dashboards
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Visualize key performance indicators (KPIs) and metrics in
+                real-time with customizable dashboards that provide actionable
+                insights.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-lg text-foreground h-full text-center">
+              <div class="f-column space-y-1.5 p-6 df jc-center ai-center">
+                <div
+                  class="bg-primary/20 p-2 rounded-full ring-8 ring-8-primary/10 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-lock text-primary"
+                  >
+                    <rect
+                      width="18"
+                      height="11"
+                      x="3"
+                      y="11"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h3
+                  class="text-2xl text-semibold leading-none tracking-tight font-bricolage"
+                >
+                  Robust API Integrations
+                </h3>
+              </div>
+              <p class="p-6 pt-0 text-muted-foreground">
+                Easily connect our platform with your existing software
+                solutions, enabling data synchronization and enhancing
+                functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Solutions -->
+    <section id="solutions" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Services</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Grow Your Business
+          </h2>
+          <p class="text-xl text-muted-foreground mb-8">
+            From marketing and sales to operations and strategy, we have the
+            expertise to help you achieve your goals.
+          </p>
+        </header>
+        <div
+          class="dg grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-screen-lg mx-auto"
+        >
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                Consultation Services
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Expert guidance tailored to identify opportunities and
+                strategize effectively.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                Custom Domain Integration
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Seamless integration of your unique domain for a professional
+                online presence.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                Social Media Integrations
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Connect with popular platforms to enhance your online engagement
+                and reach.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                Email Marketing Integrations
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Effortlessly connect email marketing tools to streamline your
+                campaigns.
+              </p>
+            </div>
+            <div
+              class="inline-flex ai-center rounded-full border border-primary px-2.5 py-0.5 text-xs text-semibold transition-colors bg-muted text-foreground absolute -top-2 -right-3"
+            >
+              PRO
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                SEO Optimization
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                Improve your search engine visibility with tailored optimization
+                strategies.
+              </p>
+            </div>
+            <div
+              class="inline-flex ai-center rounded-full border border-primary px-2.5 py-0.5 text-xs text-semibold transition-colors bg-muted text-foreground absolute -top-2 -right-3"
+            >
+              PRO
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted h-full relative"
+          >
+            <div class="df f-column gap-2 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight font-bricolage text-foreground"
+              >
+                Ongoing Support
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                24/7 customer support to ensure smooth operations and address
+                any issues.
+              </p>
+            </div>
+            <div
+              class="inline-flex ai-center rounded-full border border-primary px-2.5 py-0.5 text-xs text-semibold transition-colors bg-muted text-foreground absolute -top-2 -right-3"
+            >
+              PRO
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section testimonials -->
+    <section id="testimonials" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Testimonials</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Hear What Our 1000+ Clients Say
+          </h2>
+        </header>
+        <div class="relative w-[80%] sm:w-[90%] lg-max-w-screen-xl mx-auto">
+          <div class="overflow-hidden">
+            <div
+              id="testimonials-slider"
+              class="df -ml-4"
+              style="
+                transition: transform 0.5s ease-in-out;
+                transform: translateX(1rem);
+              "
+            >
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "This platform transformed our workflow! The automation
+                    features saved us countless hours, and the support team is
+                    fantastic!"
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/1.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          John Doe
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Product Manager
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "I can’t imagine running my business without this tool. The
+                    insights from the analytics have helped us make smarter
+                    decisions."
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/2.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          Sophia Collins
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Cybersecurity Analyst
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "The training sessions were invaluable. Our team is now
+                    fully equipped to utilize all the features effectively!"
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/3.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          Adam Johnson
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Chief Technology Officer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "Great integration options! Connecting our existing tools
+                    was a breeze, and it’s improved our overall efficiency."
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/4.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          Ethan Parker
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          Data Scientist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "The customer support is top-notch. They’ve been there for
+                    us every step of the way, ensuring everything runs
+                    smoothly."
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/5.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          Ava Mitchell
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          IT Project Manager
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonial-slide min-w-0 f-shrink-0 f-grow-0 f-basis-full pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div
+                  class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+                >
+                  <div class="p-6 pt-6 pb-0">
+                    <div class="df gap-1 pb-6">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-stars)"
+                        stroke="var(--color-stars)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-star size-4 fill-orange-400 text-orange-400"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        ></polygon>
+                      </svg>
+                    </div>
+                    "I love the customization capabilities. It feels like this
+                    platform was built just for our business needs!"
+                  </div>
+                  <div class="df f-column space-y-1.5 p-6">
+                    <div class="df f-row ai-center gap-4">
+                      <span
+                        class="relative df h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                        ><img
+                          class="aspect-square h-full w-full"
+                          alt="Avatar"
+                          src="/images/avatars/6.png"
+                      /></span>
+                      <div class="df f-column">
+                        <h3 class="text-semibold tracking-tight text-lg">
+                          Isabella Reed
+                        </h3>
+                        <p class="text-sm text-muted-foreground">
+                          DevOps Engineer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            id="prev-btn"
+            class="inline-flex cursor-pointer ai-center jc-center gap-2 whitespace-nowrap text-sm text-medium transition-colors button-bezel border border-primary bg-background absolute h-8 w-8 rounded-full -left-12 top-1/2 -translate-y-1/2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-left h-4 w-4 text-foreground"
+            >
+              <path d="m12 19-7-7 7-7"></path>
+              <path d="M19 12H5"></path>
+            </svg>
+          </button>
+          <button
+            id="next-btn"
+            class="inline-flex cursor-pointer ai-center jc-center gap-2 whitespace-nowrap text-sm text-medium transition-colors button-bezel border border-primary bg-background absolute h-8 w-8 rounded-full -right-12 top-1/2 -translate-y-1/2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right h-4 w-4 text-foreground"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Team -->
+    <section id="team" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Team</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            The Company Dream Team
+          </h2>
+        </header>
+        <div
+          class="dg grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8"
+        >
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted df f-column h-full overflow-hidden image-teams"
+          >
+            <div class="df f-column space-y-1.5 p-0 gap-0">
+              <div class="h-full overflow-hidden">
+                <img
+                  alt="team member 1"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                  class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear"
+                  style="color: transparent"
+                  src="/images/teams/1.webp"
+                />
+              </div>
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight py-6 pb-4 px-6"
+              >
+                Michael<span class="text-primary ml-2">Holland</span>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 pb-0 text-muted-foreground false">
+              DevOps Engineer<span>,</span>
+            </div>
+            <div class="p-6 pt-0 text-muted-foreground pb-6">
+              CI/CD Pipeline Mastermind
+            </div>
+            <div class="df ai-center p-6 pt-0 space-x-4 mt-auto">
+              <a
+                target="_blank"
+                class="text-foreground transition-all"
+                href="https://shadcnuikit.com/"
+              >
+                <svg
+                  width="20px"
+                  height="20px"
+                  fill="var(--color-text-foreground)"
+                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon text-foreground"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted df f-column h-full overflow-hidden image-teams"
+          >
+            <div class="df f-column space-y-1.5 p-0 gap-0">
+              <div class="h-full overflow-hidden">
+                <img
+                  alt="team member 2"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                  class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear"
+                  style="color: transparent"
+                  src="/images/teams/2.webp"
+                />
+              </div>
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight py-6 pb-4 px-6"
+              >
+                Zoe<span class="text-primary ml-2">Garcia</span>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 pb-0 text-muted-foreground false">
+              JavaScript Evangelist<span>,</span>
+            </div>
+            <div class="p-6 pt-0 text-muted-foreground pb-6">Deno Champion</div>
+            <div class="df ai-center p-6 pt-0 gap-4 mt-auto">
+              <a
+                target="_blank"
+                class="text-foreground transition-all"
+                href="https://shadcnuikit.com/"
+              >
+                <svg
+                  width="20px"
+                  height="20px"
+                  stroke="currentColor"
+                  fill="var(--color-text-foreground)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon text-foreground"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                class="transition-all"
+                href="https://github.com/github-nqvnlc"
+              >
+                <svg
+                  width="20px"
+                  height="20px"
+                  fill="var(--color-text-foreground)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted df f-column h-full overflow-hidden image-teams"
+          >
+            <div class="df f-column space-y-1.5 p-0 gap-0">
+              <div class="h-full overflow-hidden">
+                <img
+                  alt="team member 3"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                  class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear"
+                  style="color: transparent"
+                  src="/images/teams/3.webp"
+                />
+              </div>
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight py-6 pb-4 px-6"
+              >
+                Evan<span class="text-primary ml-2">James</span>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 pb-12 text-muted-foreground false">
+              Backend Developer
+            </div>
+            <div class="df ai-center p-6 pt-0 gap-4 mt-auto">
+              <a
+                target="_blank"
+                class="text-foreground transition-all"
+                href="https://shadcnuikit.com/"
+              >
+                <svg
+                  width="20px"
+                  height="20px"
+                  fill="var(--color-text-foreground)"
+                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon text-foreground"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                class="transition-all"
+                href="https://github.com/github-nqvnlc"
+              >
+                <svg
+                  width="20px"
+                  height="20px"
+                  fill="var(--color-text-foreground)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon fill-foreground"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                class="hover:opacity-80 transition-all"
+                href="https://x.com/TobyBelhome"
+              >
+                <svg
+                  width="18px"
+                  height="18px"
+                  fill="var(--color-text-foreground)"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-foreground"
+                >
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-card-foreground shadow-sm bg-muted df f-column h-full overflow-hidden image-teams"
+          >
+            <div class="df f-column space-y-1.5 p-0 gap-0">
+              <div class="h-full overflow-hidden">
+                <img
+                  alt="team member 4"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                  class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear"
+                  style="color: transparent"
+                  src="/images/teams/4.webp"
+                />
+              </div>
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight py-6 pb-4 px-6"
+              >
+                Pam<span class="text-primary ml-2">Taylor</span>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 pb-0 text-muted-foreground false">
+              Fullstack Developer<span>,</span>
+            </div>
+            <div class="p-6 pt-0 text-muted-foreground pb-6">UX Researcher</div>
+            <div class="df ai-center p-6 pt-0 gap-4 mt-auto">
+              <a
+                target="_blank"
+                class="hover:opacity-80 transition-all"
+                href="https://x.com/TobyBelhome"
+              >
+                <svg
+                  width="18px"
+                  height="18px"
+                  fill="var(--color-text-foreground)"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-foreground"
+                >
+                  <path
+                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Pricing -->
+    <section id="pricing" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Pricing</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Get unlimitted access
+          </h2>
+          <p class="text-xl text-muted-foreground mb-8">
+            Enjoy unlimited access to all features and resources, empowering
+            your business to grow without limits.
+          </p>
+        </header>
+        <div class="dg md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+          <!-- 1 -->
+          <div class="rounded-lg border bg-card text-foreground shadow-sm">
+            <div class="df f-column space-y-1.5 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight pb-2"
+              >
+                Free
+              </h3>
+              <p class="text-sm text-muted-foreground pb-4">
+                Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+              </p>
+              <div>
+                <span class="text-3xl text-bold">$<!-- -->0</span
+                ><span class="text-muted-foreground"> /month</span>
+              </div>
+            </div>
+            <div class="p-6 pt-0 flex">
+              <div class="space-y-4">
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">1 team member</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">1 GB storage</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Upto 2 pages</h3>
+                </span>
+                <span class="df"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Community support</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">AI assistance</h3>
+                </span>
+              </div>
+            </div>
+            <div class="df ai-center p-6 pt-0">
+              <button
+                class="w-full button-get-started cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors button-light text-foreground button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Start Free Trial
+              </button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="rounded-lg bg-muted text-foreground shadow-sm drop-shadow-xl border border-main lg:scale-[1.1]"
+          >
+            <div class="df f-column space-y-1.5 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight pb-2"
+              >
+                Premium
+              </h3>
+              <p class="text-sm text-muted-foreground pb-4">
+                Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+              </p>
+              <div>
+                <span class="text-3xl text-bold">$<!-- -->49</span
+                ><span class="text-muted-foreground"> /month</span>
+              </div>
+            </div>
+            <div class="p-6 pt-0 flex">
+              <div class="space-y-4">
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">1 team member</h3>
+                </span>
+
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">1 GB storage</h3>
+                </span>
+
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Upto 2 pages</h3>
+                </span>
+                <span class="df"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Community support</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">AI assistance</h3>
+                </span>
+              </div>
+            </div>
+            <div class="flex items-center p-6 pt-0">
+              <button
+                class="button-get-started w-full cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors bg-primary text-white button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="rounded-lg border bg-card text-foreground shadow-sm">
+            <div class="df f-column space-y-1.5 p-6">
+              <h3
+                class="text-2xl text-semibold leading-none tracking-tight pb-2"
+              >
+                Free
+              </h3>
+              <p class="text-sm text-muted-foreground pb-4">
+                Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+              </p>
+              <div>
+                <span class="text-3xl text-bold">$<!-- -->139</span
+                ><span class="text-muted-foreground"> /month</span>
+              </div>
+            </div>
+            <div class="p-6 pt-0 flex">
+              <div class="space-y-4">
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">10 team member</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">20 GB storage</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Upto 10 pages</h3>
+                </span>
+                <span class="df"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">Phone & email support</h3>
+                </span>
+                <span class="df">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check text-primary mr-2"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <h3 class="font-bricolage">AI assistance</h3>
+                </span>
+              </div>
+            </div>
+            <div class="df ai-center p-6 pt-0">
+              <button
+                class="w-full button-get-started cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors button-light text-foreground button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Contact US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Discord -->
+    <section class="pb-20 sm:pb-32">
+      <div class="container">
+        <div class="lg-w-60% mx-auto">
+          <div
+            class="rounded-lg text-foreground bg-transparent shadow-none text-center df f-column ai-center jc-center"
+          >
+            <div class="df f-column space-y-1.5 p-6">
+              <h3
+                class="tracking-tight text-4xl md:text-5xl text-bold df f-column ai-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon icon-tabler mb-4"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.732 0 -1.693 -.968 -2.328 -2.045a21.512 21.512 0 0 0 2.103 -.493a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.717 .204 1.416 .37 2.103 .494c-.635 1.075 -1.596 2.044 -2.328 2.044c-1.788 0 -3.391 -1.548 -4.428 -3.629c-.888 -2.217 -.39 -6.89 1.485 -12.204a1 1 0 0 1 .371 -.488c1.439 -1.001 2.952 -1.459 4.966 -1.673a1 1 0 0 1 .935 .435l.063 .107l.651 1.285l.137 -.016a12.97 12.97 0 0 1 2.643 0l.134 .016l.65 -1.284a1 1 0 0 1 .754 -.54l.122 -.009zm-5.983 7a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z"
+                  ></path>
+                </svg>
+                <div>
+                  Ready to join this<span class="pl-2 text-discord"
+                    >Community?</span
+                  >
+                </div>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 lg-w-75% text-xl text-muted-foreground">
+              Join our vibrant Discord community! Connect, share, and grow with
+              like-minded enthusiasts. Click to dive in! 🚀
+            </div>
+            <div class="df ai-center p-6 pt-0">
+              <button
+                class="button-get-started w-full cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors bg-primary text-white button-bezel h-10 px-4 py-2 text-bold shadow-md"
+              >
+                Join Discord
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Section Contact -->
+    <section id="contact" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">Contact</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Get Connect With Us access
+          </h2>
+          <p class="text-xl text-muted-foreground mb-8">
+            Stay in touch with us for updates, support, and valuable insights.
+            We’re here to help you every step of the way!
+          </p>
+        </header>
+        <div class="dg grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <div class="df f-column gap-6">
+              <div class="rounded-lg p-6 border border-primary">
+                <div class="df ai-center gap-3 mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-text-foreground)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-building2 size-5"
+                  >
+                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                    <path d="M10 6h4"></path>
+                    <path d="M10 10h4"></path>
+                    <path d="M10 14h4"></path>
+                    <path d="M10 18h4"></path>
+                  </svg>
+                  <p class="text-bold text-foreground">Location:</p>
+                </div>
+                <div class="text-muted-foreground">
+                  123 Maple Lane, Springfield, IL 62704
+                </div>
+              </div>
+              <div class="rounded-lg p-6 border border-primary">
+                <div class="df ai-center gap-3 mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-text-foreground)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone size-5"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <p class="text-bold text-foreground">Call us:</p>
+                </div>
+                <div class="text-muted-foreground">+1 (555) 987-6543</div>
+              </div>
+              <div class="rounded-lg p-6 border border-primary">
+                <div class="df ai-center gap-3 mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-text-foreground)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mail size-5"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  <p class="text-bold text-foreground">Email us:</p>
+                </div>
+                <div class="text-muted-foreground">contact@ourcompany.com</div>
+              </div>
+              <div class="rounded-lg p-6 border border-primary">
+                <div class="df ai-center gap-3 mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--color-text-foreground)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clock size-5"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <p class="text-bold text-foreground">Business Hours:</p>
+                </div>
+                <div class="text-muted-foreground">
+                  Tuesday to Saturday, 9 AM - 5 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border border-primary text-foreground shadow-sm bg-muted"
+          >
+            <div class="pt-6 p-6">
+              <form action="submit" class="dg w-full gap-1">
+                <div class="df f-column md:f-row gap-6">
+                  <div class="w-full space-y-2">
+                    <label
+                      class="text-sm text-medium leading-none block"
+                      for="firstName"
+                      >First Name</label
+                    ><input
+                      class="input df h-10 w-full rounded-md border border-primary bg-background px-3 py-2 text-sm"
+                      placeholder="Leopoldo"
+                      id="firstName"
+                      name="firstName"
+                      value=""
+                    />
+                  </div>
+                  <div class="w-full space-y-2">
+                    <label
+                      class="text-sm text-medium leading-none block"
+                      for="lastName"
+                      >Last Name</label
+                    ><input
+                      class="input df h-10 w-full rounded-md border border-primary bg-background px-3 py-2 text-sm"
+                      placeholder="Miranda"
+                      id="lastName"
+                      name="lastName"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="df f-column gap-1.5">
+                  <div class="w-full space-y-2">
+                    <label
+                      class="text-sm text-medium leading-none block"
+                      for="email"
+                      >Email</label
+                    ><input
+                      class="input df h-10 w-full rounded-md border border-primary bg-background px-3 py-2 text-sm"
+                      placeholder="contact@bundui.com"
+                      id="email"
+                      name="email"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="df f-column gap-1.5">
+                  <div class="w-full space-y-2">
+                    <label
+                      class="text-sm text-medium leading-none block"
+                      for="email"
+                    >
+                      Subject
+                    </label>
+                    <button
+                      type="button"
+                      class="df h-10 w-full ai-center jc-between rounded-md border bg-background px-3 py-2 text-sm"
+                      id="select-button"
+                    >
+                      <span
+                        id="selected-value"
+                        style="
+                          pointer-events: none;
+                          color: var(--color-text-muted-foreground);
+                        "
+                      >
+                        Web Development
+                      </span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="var(--color-text-muted-foreground)"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </button>
+                    <ul
+                      id="dropdown"
+                      class="hidden absolute rounded-md border border-primary bg-background text-sm shadow-md list"
+                      style="z-index: 10; padding: 0.25rem"
+                    >
+                      <li
+                        class="p-2 hover:bg-muted cursor-pointer"
+                        data-value="Web Development"
+                      >
+                        Web Development
+                      </li>
+                      <li
+                        class="p-2 hover:bg-muted cursor-pointer"
+                        data-value="Mobile Development"
+                      >
+                        Mobile Development
+                      </li>
+                      <li
+                        class="p-2 hover:bg-muted cursor-pointer"
+                        data-value="Figma Design"
+                      >
+                        Figma Design
+                      </li>
+                      <li
+                        class="p-2 hover:bg-muted cursor-pointer"
+                        data-value="REST API"
+                      >
+                        REST API
+                      </li>
+                      <li
+                        class="p-2 hover:bg-muted cursor-pointer"
+                        data-value="FullStack Project"
+                      >
+                        FullStack Project
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <div class="space-y-2">
+                    <label
+                      class="text-sm text-medium leading-none block"
+                      for=":R26l9ukq:-form-item"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      class="input df min-h-80px w-full rounded-md border border-primary bg-background px-3 py-2 text-sm resize-none"
+                      rows="5"
+                      placeholder="Your message..."
+                      name="message"
+                    ></textarea>
+                  </div>
+                </div>
+                <button
+                  class="button-get-started w-full cursor-pointer inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors bg-primary text-white button-bezel h-10 px-4 py-2 text-bold shadow-md mt-4"
+                >
+                  Get Started
+                </button>
+              </form>
+            </div>
+            <div class="df ai-center p-6 pt-0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- FAQS -->
+    <section id="faqs" class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <p class="text-lg text-primary mb-2 tracking-wider">FAQS</p>
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Common Questions
+          </h2>
+        </header>
+        <div class="max-w-screen-md mx-auto">
+          <div class="AccordionRoot">
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  How does the free trial work?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  Our free trial gives you access to all features for a limited
+                  time. No credit card is required, and you can cancel anytime.
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  Can I change my plan later?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  Absolutely! You can upgrade, downgrade, or modify your plan at
+                  any time through your account settings.
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  Is customer support available 24/7?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  Yes, our support team is available around the clock to assist
+                  you with any questions or issues.
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  How secure is my data?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  We prioritize your data privacy with robust security
+                  protocols, including end-to-end encryption and GDPR
+                  compliance.
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  Do you offer custom plans for businesses?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  Yes, we offer flexible, custom plans designed to meet the
+                  unique needs of businesses of all sizes. Contact us for more
+                  details.
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-primary">
+              <h3 class="df font-bricolage accordion-header">
+                <button
+                  type="button"
+                  class="df f1 ai-center text-lg font-bricolage jc-between py-4 cursor-pointer bg-transparent text-medium transition-all hover:underline text-left text-foreground"
+                >
+                  What payment methods do you accept?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200 cursor-pointer"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-content overflow-hidden max-h-0">
+                <p class="pb-4 pt-0 text-sm text-foreground">
+                  We accept major credit cards, PayPal, and bank transfers for
+                  easy and convenient payment options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Newsletter -->
+    <section class="pb-20 sm:pb-32">
+      <div class="container">
+        <header class="mb-6 lg:mb-12 text-center max-w-screen-md mx-auto">
+          <h2
+            class="text-3xl md:text-4xl text-bold mb-4 text-foreground font-bricolage"
+          >
+            Join Our Daily<!-- -->
+            <span class="text-gradient">Newsletter</span>
+          </h2>
+          <p class="text-xl text-muted-foreground mb-8">
+            Subscribe to receive the latest updates, insights, and exclusive
+            offers directly to your inbox.
+          </p>
+        </header>
+        <form
+          class="df f-column w-full md:f-row md:w-6/12 lg:w-4/12 mx-auto gap-4 md:gap-2"
+        >
+          <input
+            class="df h-10 w-full bg-muted rounded-md border border-primary px-3 py-2 text-sm"
+            placeholder="contact@bundui.com"
+            aria-label="email"
+          />
+          <a
+            aria-label="Get Template"
+            target="_blank"
+            class="link inline-flex ai-center jc-center gap-2 whitespace-nowrap text-sm text-semibold cursor-pointer button-bezel transition-colors bg-primary text-button h-9 rounded-md px-3 button-hover"
+            href="/"
+          >
+            Subscribe
+          </a>
+        </form>
+      </div>
+    </section>
+    <!-- =========== -->
+
+    <!-- Footer -->
+    <footer class="container pb-8 lg:pb-16">
+      <div class="p-10 bg-muted border border-primary rounded-2xl">
+        <div
+          class="dg grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8"
+        >
+          <div class="col-span-full xl:col-span-2">
+            <!-- Logo  -->
+            <a href="/" class="df ai-center text-bold link">
+              <span
+                class="df ai-center jc-center rounded-lg mr-2 size-7 lg-size-8 border border-primary logo"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sun-dim size-5 lg-size-6 text-white"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 4h.01"></path>
+                  <path d="M20 12h.01"></path>
+                  <path d="M12 20h.01"></path>
+                  <path d="M4 12h.01"></path>
+                  <path d="M17.657 6.343h.01"></path>
+                  <path d="M17.657 17.657h.01"></path>
+                  <path d="M6.343 17.657h.01"></path>
+                  <path d="M6.343 6.343h.01"></path>
+                </svg>
+              </span>
+              <h5 class="text-lg lg-text-xl text-secondary">Cosmic</h5>
+            </a>
+          </div>
+          <div class="df f-column gap-2">
+            <h3
+              class="text-bold text-secondary text-lg text-foreground mb-2 font-bricolage"
+            >
+              Contact
+            </h3>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Github</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Twitter</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div class="df f-column gap-2">
+            <h3 class="text-bold text-secondary text-lg mb-2 font-bricolage">
+              Platforms
+            </h3>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >iOS</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Android</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Web</a
+              >
+            </div>
+          </div>
+          <div class="df f-column gap-2">
+            <h3 class="text-bold text-secondary text-lg mb-2 font-bricolage">
+              Help
+            </h3>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Contact Us</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >FAQ</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Feedback</a
+              >
+            </div>
+          </div>
+          <div class="df f-column gap-2">
+            <h3 class="text-bold text-secondary text-lg mb-2 font-bricolage">
+              Socials
+            </h3>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Twitch</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Discord</a
+              >
+            </div>
+            <div>
+              <a
+                class="link text-foreground opacity-60 hover:opacity-100"
+                href="#"
+                >Dribbble</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          style="height: 1px; background-color: var(--color-border)"
+          class="shrink-0 bg-border w-full my-6"
+        ></div>
+        <div class="text-sm text-muted-foreground">
+          © 2024 | It is under the roof of<!-- -->
+          <a
+            target="_blank"
+            class="inline-flex ai-center jc-center gap-2 whitespace-nowrap rounded-md text-sm text-medium transition-colors text-primary p-0 h-auto cursor-pointer hover-underline underline-offset-4"
+            href="https://github.com/github-nqvnlc"
+            >Locnv</a
+          >.
+        </div>
+      </div>
+    </footer>
+    <!-- =========== -->
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="hidden">
+      <div
+        data-state="open"
+        class="modal-overlay"
+        id="modalOverlayBackdrop"
+        style="pointer-events: auto"
+      ></div>
+      <div
+        role="dialog"
+        id="dialog-modal"
+        data-state="open"
+        class="shadow-lg dialog-modal sm:max-w-sm"
+        tabindex="-1"
+        style="pointer-events: auto"
+      >
+        <div>
+          <div class="df f-column space-y-2 text-center sm:text-left mb-4 ml-4">
+            <a href="/" class="df ai-center text-bold link">
+              <span
+                class="df ai-center jc-center rounded-lg mr-2 size-7 border border-primary logo"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sun-dim size-5 text-white"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 4h.01"></path>
+                  <path d="M20 12h.01"></path>
+                  <path d="M12 20h.01"></path>
+                  <path d="M4 12h.01"></path>
+                  <path d="M17.657 6.343h.01"></path>
+                  <path d="M17.657 17.657h.01"></path>
+                  <path d="M6.343 17.657h.01"></path>
+                  <path d="M6.343 6.343h.01"></path>
+                </svg>
+              </span>
+              <h5 class="text-lg text-secondary">Cosmic</h5>
+            </a>
+          </div>
+          <div class="df f-column gap-2">
+            <a
+              class="link inline-flex ai-center gap-2 whitespace-nowrap rounded-md text-medium transition-colors hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-base text-secondary"
+              href="#solutions"
+              >Solutions</a
+            ><a
+              class="link inline-flex ai-center gap-2 whitespace-nowrap rounded-md text-medium transition-colors hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-base text-secondary"
+              href="#pricing"
+              >Pricing</a
+            ><a
+              class="link inline-flex ai-center gap-2 whitespace-nowrap rounded-md text-medium transition-colors hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-base text-secondary"
+              href="#team"
+              >Team</a
+            ><a
+              class="link inline-flex ai-center gap-2 whitespace-nowrap rounded-md text-medium transition-colors hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 justify-start text-base text-secondary"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <button
+          type="button"
+          id="closeDialog"
+          class="absolute right-4 top-4 rounded-sm transition-opacity bg-transparent cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x h-4 w-4"
+          >
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+        <div
+          class="df sm:justify-end sm:space-x-2 f-column sm:flex-col jc-start ai-start"
+        >
+          <div
+            style="height: 1px"
+            class="shrink-0 border-bottom border-primary w-full mb-2"
+          ></div>
+          <button
+            id="toggleDarkModeM"
+            class="inline-flex ai-center gap-2 whitespace-nowrap text-sm font-medium h-9 rounded-md px-3 w-full jc-start cursor-pointer bg-transparent button-darkmode"
+          >
+            <div id="iconDarkModeM" class="df ai-center gap-2"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- =========== -->
+    <script src="script/index.js"></script>
+    <script src="script/rain-drop.js"></script>
+  </body>
+</html>

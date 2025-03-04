@@ -1,0 +1,80 @@
+/* background */
+/* ------Background----------- */
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-primary\/20 {
+  background-color: var(--color-primary-20);
+}
+.bg-primary\/60 {
+  background-color: var(--color-primary-60);
+}
+.bg-popover {
+  background-color: var(--color-popover);
+}
+.bg-muted {
+  background-color: var(--color-bg-muted);
+}
+.bg-background {
+  background-color: var(--color-bg-background);
+}
+.button-light {
+  background-color: var(--color-button-light);
+}
+.ring-8-primary\/10 {
+  box-shadow: 0 0 0 8px var(--color-primary-10);
+}
+.bg-color-stars {
+  background-color: var(--color-stars);
+}
+
+
+/* ------Border Color----------- */
+.border-primary {
+  border-color: var(--color-border);
+}
+.border-main {
+  border-color: var(--color-primary);
+}
+.border-light {
+  border-color: var(--color-background);
+}
+.border-transparent {
+  border-color: transparent;
+}
+
+/* Text Color */
+/* ------Text Color----------- */
+.text-secondary {
+  color: var(--color-text);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-white {
+  color: #ffffff;
+}
+.text-button {
+  color: var(--color-text-button);
+}
+.text-foreground {
+  color: var(--color-text-foreground);
+}
+.text-primary-foreground {
+  color: var(--color);
+}
+.text-muted-foreground {
+  color: var(--color-text-muted-foreground);
+}
+.text-muted-foreground-15 {
+  color: var(--color-text-muted-foreground-15);
+}
+.text-card-foreground {
+  color: var(--color-text-muted-foreground);
+}
+.text-discord {
+  color: var(--color-discord);
+}
